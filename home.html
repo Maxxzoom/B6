@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="home.css" />
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
   </head>
+  <style>
+    header {
+    }
+  </style>
   <body>
     <!-- Navbar -->
     <header>
@@ -26,7 +35,7 @@
     </header>
 
     <!-- Container -->
-    <section class="hero">
+    <section class="hero" style="height: 30px">
       <h2>Welcome to mysite</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
@@ -58,11 +67,15 @@
       <form action="" class="contact-form">
         <input type="text" placeholder="Your Name " required />
         <input type="text" placeholder="Your Email " required />
-        <textarea placeholder="Your Message" rows="5" required></textarea> alt+shift+downarrow
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        alt+shift+downarrow
         <button type="submit">Send Message</button>
       </form>
     </section>
 
+    <button id="mybtn1">Submit</button>
+    <button id="mybtn2">Submit</button>
+    <button id="mybtn3">Submit</button>
     <!-- Footer -->
     <footer>
       <div class="footer-container">
@@ -86,6 +99,64 @@
       <div class="footer-bottom">&copy; 2025 Ecom. All rights reserved</div>
     </footer>
   </body>
+  <script>
+    // JS is programming language of the web
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    // it can calculate,manupulate and validate data
+    //  document.getElementById("mybtn1").innerHTML="Hello"
+
+    // Variables
+    //  it will store some data in form of containers
+
+    //  JS variables can be declared in 4 ways
+
+    // 1. Automatically
+    // 2. var
+    // 3. let
+    // 4. const
+
+    // ES6
+    // a = 5;
+    // b = 4;
+    // c = a + b;
+    // console.log(c, "addtion of a+b");
+
+    // var
+    //it is  Global scope
+    // it can be reassign the value and it can redeclare the variable
+    // var e = "Maxxzoom";
+    // var e = "zoom";
+    // var f = "Limited";
+    // function add() {
+    //   var g = e + f;
+    //   console.log(g);
+    // }
+
+    // add();
+
+    // let
+    // it is block scope
+    // it can be reassign the value but we cannot redeclare the same variable
+    // let i = 89;
+    // i = 55;
+    // let j = 34;
+    // function add2() {
+    //   let k = i + j;
+    //   console.log(k);
+    // }
+    // console.log(k);
+
+    // add2();
+
+   
+
+   
+  </script>
+  <script src="script.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+  ></script>
 </html>
