@@ -206,13 +206,13 @@ const mobile = {
 // 3 ways of arr
 
 // 1
-const arr = ["first", 83, true, false, undefined, null];
+// const arr = ["first", 83, true, false, undefined, null];
 // console.log(typeof arr,"type of array");
 
 // 2
-const arr1 = [];
-arr1[0] = "umesh";
-arr1[2] = false;
+// const arr1 = [];
+// arr1[0] = "umesh";
+// arr1[2] = false;
 // console.log(arr1);
 
 // 3
@@ -226,14 +226,14 @@ arr1[2] = false;
 // console.log(arr.length);
 
 // push();
-arr1.push(3);
+// arr1.push(3);
 // console.log(arr1);
 
 // toString()
 // console.log(arr1.toString());
 
 // pop()
-console.log(arr1);
+// console.log(arr1);
 // console.log(arr1.pop());
 
 // shift()
@@ -245,7 +245,7 @@ console.log(arr1);
 
 // splice()
 // add new element into array at any specific index
-arr1.splice(1, 2, "tata", "altroz");
+// arr1.splice(1, 2, "tata", "altroz");
 // arr1.splice(
 //   "starting index",
 //   "how many element you want to delete",
@@ -255,14 +255,186 @@ arr1.splice(1, 2, "tata", "altroz");
 
 // concat();
 // joining 2 arrays
-console.log(arr.concat(arr1));
-console.log(arr.concat(32));
-
+// console.log(arr.concat(arr1));
+// console.log(arr.concat(32));
 
 // slice()
 // recreate any array from the existing array
-console.log(arr.slice(1,4));
+// console.log(arr.slice(1,4));
+
+//Array - map,filter, find, reduce, foreach,indexOf, lastIndexOf
+
+// Foreach()
+const arr = ["headphone", "mobile", "laptop"];
+
+// const arr1 = [2, 5, 6, 8, 74, 1, 66, 99];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i], "forloop");
+// }
+
+// arr.forEach((element) => {
+//   console.log(element, "foreach");
+// });
+
+// map()
+// by iterating each element we can modify the things & return new array
+
+// const maparr = arr.map((ele, index) => {
+//   return ele + "s", index;
+// });
+
+// console.log(arr);
+// console.log(maparr);
+
+// filter()
+
+// const filterarr = arr1.filter((ele, index) => {
+//   return ele > 10;
+// 2>10 false
+// 5 >10 false
+// 74 >10 true
+// });
+
+// let students = [
+//   {
+//     id: 1,
+//     name: "Rahul",
+//     sports: "cricket",
+//   },
+//   {
+//     id: 2,
+//     name: "tejas",
+//     sports: "basketball",
+//   },
+//   {
+//     id: 3,
+//     name: "suyash",
+//     sports: "basketball",
+//   },
+//   {
+//     id: 4,
+//     name: "umesh",
+//     sports: "cricket",
+//   },
+// ];
+
+// let basketballplayers = students.filter((elem) => {
+//   return elem.sports === "basketball";
+// });
+
+// console.log(basketballplayers);
+
+// find()- ite will retrun whether element present or not at first index
+
+// const arr1 = [2, 5, 6, 8, 74, 6, 6, 1, 66, 99];
+
+// const is6 = arr1.find((ele) => {
+//   return ele == 6;
+// });
+// console.log(is6);
+
+// indexOf() - if we want to find element position in array
+// const indexof = arr1.indexOf(6);
+// console.log(indexof);
+
+// lastindexof()-if we want to find element position in array - last
+// const lastindexof = arr1.lastIndexOf(6);
+// console.log(lastindexof);
+
+// reduce() - it is combination of map, filter
+
+// let reducearr = arr1.reduce((sum, ele) => {
+//   return sum + ele;
+//1 sum = 0 + 2 = 2
+//2 sum= 2 + 5 = 7
+// 3 sum =7+6 =13
+// }, 4);
+
+// console.log(reducearr);
+
+// const names = ["John", "Alice", "Bob"];
+
+// console.log(names.sort());
+
+// const fruits = ["apple", "banana", "apple", "orange", "banana", "apple"];
+
+// const counts = fruits.reduce((acc, fruit) => {
+//   acc[fruit] = acc[fruit] + 1;
+// apple  acc[apple]=acc[apple]+1;        acc= {apple:1,banana:0,orange:0}
+// banana  acc[banana]=acc[banana]+1;     acc= {apple:1,banana:1,orange:0}
+// apple  acc[apple]=acc[apple]+1
+// orange acc[orange]=acc[orange]+1
+// banana acc[banana]=acc[banana]+1
+// apple  acc[apple]=acc[apple]+1
+
+// acc= {apple:3,banana:2,orange:1}
+
+//   return acc;
+// }, {});
+
+// console.log(counts,"Fruits");
+
+// Pass by value
+// let a = 5;
+// let b = 7;
+// console.log(a, b);
+// b = a;
+
+// console.log(a, b);
+
+// Pass by reference
+// let obj1 = { name: "Tejas" };
+// let obj2=obj1;
+// console.log(obj1,obj2);
+// obj2.name="Suyash";
+// let obj3=obj2;
+// console.log(obj1,obj2,obj3);
+// obj3.name="Umesh";
+// console.log(obj1,obj2,obj3);
+
+const arr2 = [2, 5, 6, 8, 74, 6, 6, 1, 66, 99];
+
+const object = { id: 1, name: "anuj", city: "pune" };
+
+// for of => array
+for (let value of arr2) {
+  console.log(value);
+}
+
+// for in => object
+for (let prop in object) {
+  console.log(prop, object[prop]);
+}
+
+// Normal function
+function myfun() {}
+myfun();
+
+const myfun2 = () => {};
+myfun2()(
+  // IIFE (immediate involke function execution)
+  function () {
+    console.log("IIFE");
+  }
+)();
+
+// Callback function
+function mappedfun(ele) {}
+
+arr.map(() => {});
+
+arr.map(function (ele) {
+  console.log(ele);
+});
+
+
+// BOM & DOM
+// Browser Objects Modal
+// we  cant use js file bcoz node is global object
+// Navigator
+// pop up alert,confirm, prompt
+// window
+// location
 
 
 
-//Array - map,filter, find, reduce, foreach,indexOf, lastIndexOf 
