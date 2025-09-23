@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap");
+
+/* CSS -  Cascading style sheets
+3 ways of using css
+ 1. Inline css - Highest priority
+ 2. Internal css - Moderate priority
+ 3. External css - Lowest priority  */
+
+/* External css < Internal css < Inline css          */
+
+/* h1 {
+  color: red;
+  font-size: 14px;
+}
+.heading {
+  color: blue;
+}
+
+#heading {
+  color: yellow;
+} */
+
+/* element < class < ID */
+/* header {
+  color: red;
+}
+.head {
+  color: aqua;
+}
+#header1 {
+  color: rgb(20, 67, 220);
+} */
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+/* Box modal */
+/* Content */
+/* Padding */
+/* Border */
+/* Margin */
+/* div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+/* p { */
+/* border: 10px solid black; */
+/* padding: 10px; */
+/* margin: 10px 20px 30px 40px;
+  height: 100px;
+  width: 100px;
+  text-align: right; */
+/* outline: 20px solid red; */
+/* border-radius: 50%; */
+/* text-align: center; */
+/* text-decoration-line: line-through; */
+/* text-decoration-color: red; */
+/* text-decoration-style: wavy; */
+/* text-transform:capitalize ; */
+/* letter-spacing: 10px; */
+/* line-height: 1.8; */
+/* text-shadow: 2px 2px 20px rgb(0, 0, 0); */
+
+/* font-family: "Manufacturing Consent", system-ui; */
+/* font-size: x-small; */
+/* font-style: oblique;  */
+/*  */
+/* font-weight: bold; */
+
+/* } */
+
+/* div {
+  
+}
+
+p {
+  width: 400px;
+  height: 200px;
+  overflow-x: auto;
+}
+
+img {
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+} */
+
+/* Combinator */
+div {
+  border: 1px solid red;
+}
+/* 4 types of combinator */
+/* 1. Descendent coombinator (space) */
+/* div p {
+  background-color: yellow;
+} */
+
+/* 2. Child combinator (>)*/
+/* div > p {
+  background-color: yellow;
+} */
+/* 3.Next siblinig combinator (+) */
+/* div + p {
+  background-color: yellow;
+} */
+/* 4. Subsequent-sibling combinator (~) */
+div ~ p {
+  /* background-color: yellow; */
+  /* opacity: 1; */
+}
+
+/* Psuedo classes - used to define special state of an element*/
+
+/* syntax */
+/* selector:pseudo-class{
+  propery:value;
+} */
+
+a:visited {
+  color: magenta;
+}
+
+a:hover {
+  color: red;
+  background-color: yellow;
+}
+a:active {
+  color: green;
+}
+/* p {
+  display: none;
+}
+div:hover p {
+  display: block;
+} */
+
+/* p:last-child{
+  color:yellow
+} */
+
+/* Psuedo elements - used to define specific part of an element */
+/* syntax */
+/* selector::pseudo-elements{
+  propery:value;
+} */
+
+p::before {
+  content: "🤣";
+}
+
+p::after {
+  content: "👌";
+}
+p::selection {
+  color: red;
+  background-color: yellow;
+}
+::marker {
+  color: red;
+  font-size: 20px;
+}
+input::placeholder {
+  color: red;
+  background-color: yellow;
+  font-size: 20px;
+  padding: 30px;
+}
+
+a[target="_blank"] {
+  background-color: yellow;
+}
+[title="tree"] {
+  border: 1px solid blue;
+}
+
+/* Math function */
+/* calc();
+max();
+min(); */
+
+#div1 {
+  color: red;
+  /* width: calc(100% - 100px);
+  padding: calc(200px - 10px); */
+  /* width: max(50%, 300px); */
+  /* width: min(50%, 300px); */
+}
+
+div{
+  color:yellow !important
+}
