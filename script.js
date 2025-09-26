@@ -98,9 +98,9 @@ function addToFavorites(id) {
 }
 
 // Render Cart()
-function   renderCart(){
-  const cartItem=
-}
+// function   renderCart(){
+//   const cartItem=
+// }
 
 function renderProducts(filterText = "", category = "all") {
   const container = document.getElementById("product-list");
