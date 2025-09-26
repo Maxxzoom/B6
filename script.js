@@ -42,7 +42,7 @@ const products = [
     img: "data:image/jpeg;base64,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",
   },
   {
-    id: 6,
+    id: 7,
     name: "Iphone",
     price: 50000,
     category: "elctronics",
@@ -50,34 +50,63 @@ const products = [
   },
 ];
 
-const cart = [];
+// Localstorage Helpers
+function getCart() {
+  return JSON.parse(localStorage.getItem("cart")) || [];
+}
 
-const productList = document.getElementById("product-list");
-const searchInput = document.getElementById("search");
-const categoryFilter = document.getElementById("category-filter");
+function saveCart(cart) {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
 
-const cartEle = document.getElementById("cart");
-const cartItem = document.getElementById("cart-items");
-const cartTotal = document.getElementById("cart-total");
-const checkOut = document.getElementById("checkout");
-const cartCount = document.getElementById("cartCount");
+function getFavorites() {
+  return JSON.parse(localStorage.getItem("favs")) || [];
+}
 
-// Render Products
-// products.forEach((product) => {
-//   const div = document.createElement("div");
-//   div.classList.add("product");
-//   div.innerHTML = `
-//   <img src="${product.img}" alt="${product.name}" />
-//   <h3>${product.name}</h3>
-//   <p>  ${product.price} </p>
-//   <button onclick="addToCart(${product.id})" >Add to Cart</button>
-//   `;
-//   productList.appendChild(div);
-// });
+function saveFavorites(favs) {
+  localStorage.setItem("favs", JSON.stringify(favs));
+}
+
+// Navbar Count
+function updateCounts() {
+  const cartCount = document.getElementById("cart-count");
+  const favCount = document.getElementById("fav-count");
+  if (cartCount) cartCount.textContent = getCart().length;
+  if (favCount) favCount.textContent = getFavorites().length;
+}
+
+// Add to Cart
+function addToCart(id) {
+  let cart = getCart();
+  const product = products.find((p) => p.id === id);
+  cart.push(product);
+  saveCart(cart);
+  updateCounts();
+  alert(product.name + "added to cart");
+}
+
+// Add to favorites
+function addToFavorites(id) {
+  let favs = getFavorites();
+  const product = products.find((p) => p.id === id);
+  if (!favs.find((f) => f.id === id)) {
+    favs.push(product);
+    saveFavorites(favs);
+    updateCounts();
+    alert(product.name + "added to Favorites");
+  }
+}
+
+// Render Cart()
+function   renderCart(){
+  const cartItem=
+}
 
 function renderProducts(filterText = "", category = "all") {
-  productList.innerHTML = "";
+  const container = document.getElementById("product-list");
+  if (!container) return;
 
+  container.innerHTML = "";
   const filtered = products.filter(
     (p) =>
       p.name.toLowerCase().includes(filterText.toLowerCase()) &&
@@ -88,56 +117,19 @@ function renderProducts(filterText = "", category = "all") {
     const div = document.createElement("div");
     div.classList.add("product");
     div.innerHTML = `
-  <img src="${product.img}" alt="${product.name}" />
-  <h3>${product.name}</h3>
-  <p>  ${product.price} </p>
-  <button onclick="addToCart(${product.id})" >Add to Cart</button>
-  `;
-    productList.appendChild(div);
+     <img src=${product.img} alt="${product.name}" />
+     <h3>${product.name}</h3>
+     <p>  ${product.price} </p>
+     <button onclick="addToCart(${product.id})" >Add to Cart</button>
+     <button onclick="addToFavorites(${product.id})" >❤️</button>
+     `;
+    container.appendChild(div);
   });
 }
 
-// Add to Cart
-function addToCart(id) {
-  const product = products.find((p) => p.id === id);
-  cart.push(product);
-  updateCart();
-}
-
-function updateCart() {
-  cartItem.innerHTML = "";
-  let total = 0;
-
-  cart.forEach((item, index) => {
-    total += item.price;
-    const li = document.createElement("li");
-    li.textContent = `${item.name} - ${item.price}`;
-    const removeBtn = document.createElement("button");
-    removeBtn.textContent = "❌";
-    removeBtn.onclick = () => removeFromCart(index);
-    li.appendChild(removeBtn);
-    // cartCount.textContent = cart.length;
-    // cart.appendChild(cartCount);
-    cartItem.appendChild(li);
-
-    cartTotal.textContent = `Total: ${total}`;
-  });
-}
-console.log(cart);
-
-searchInput.addEventListener("input", () => {
-  renderProducts(searchInput.value, categoryFilter.value);
+document.addEventListener("DOMContentLoaded", () => {
+  updateCounts();
+  renderProducts();
+  // renderCart();
+  // renderFavorites();
 });
-categoryFilter.addEventListener("change", () => {
-  renderProducts(searchInput.value, categoryFilter.value);
-});
-
-// Responsive menu toggle
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
-
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-});
-
-renderProducts();

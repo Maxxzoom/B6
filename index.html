@@ -18,7 +18,12 @@
         <a href="./about.html">About</a>
         <a href="./contact.html">Contact</a>
 
-        <a href="">🛒 Cart <span id="cart-count">0</span> </a>
+        <a href="./favorites.html" id="favorites-btn"
+          >❤️<span id="fav-count">0</span>
+        </a>
+        <a href="./cart.html" id="cart-btn"
+          >🛒<span id="cart-count">0</span>
+        </a>
       </nav>
       <button class="menu-toggle" id="menu-toggle">&#9776;</button>
     </header>
@@ -47,6 +52,12 @@
         <p id="cart-total">Total :$0</p>
         <p id="cart-total"></p>
         <button id="checkout">Checkout</button>
+      </div>
+
+      <!-- Favorites -->
+      <div class="favorites" id="favorites">
+        <h2>Your Favorites</h2>
+        <ul id="fav-items"></ul>
       </div>
     </main>
 

@@ -126,6 +126,16 @@ main {
   border-radius: 5px;
 }
 
+/* Cart & Favorites */
+/* .cart,
+.favorites {
+  margin: 1rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  display: none;
+} */
+
 /* Footer */
 footer {
   background: #333;
