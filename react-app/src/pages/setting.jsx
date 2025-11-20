@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useEffect } from "react";
 
 const Setting = () => {
-  return (
-    <div>
-      Setting
-    </div>
-  )
-}
+  useEffect(() => {
+    console.log("component setting mounted");
+  }, []);
+  return <div>Setting</div>;
+};
 
-export default Setting
+export default Setting;

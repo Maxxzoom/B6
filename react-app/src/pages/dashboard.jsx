@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
+  // useEffect() - Fetch Data
+
+ 
+
   return (
     <div>
       <nav style={{ display: "flex", gap: "10px" }}>
